@@ -185,6 +185,7 @@ foreach($food_assoc as $keys => $item){
         foreach ($item as $itemkey => $value) {
         print_r(": " . $value);
       };
+    
       echo "<br>";
   };
 
@@ -197,11 +198,14 @@ and print the type and origin as nested list items (see the example below).
 
 foreach ($food_assoc as $key => $value) {
 echo "<ul><li>{$key}";
+    
 	echo"<ul><li>";     
+    
     foreach ($value as $valuekey => $sub) {
         echo"{$valuekey} : {$sub}";
     echo"</li></ul>";
 	}
+    
 echo"</li></ul>";
 }
 
